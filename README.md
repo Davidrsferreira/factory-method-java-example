@@ -8,7 +8,7 @@ This repository demonstrates how to apply the **Factory Method** design pattern 
 
 ```
 factory-method-pattern/
-├── initial-version/         # Code with switch-case (before refactoring)
+├── initialversion/         # Code with switch-case (before refactoring)
 └── refactored-version/      # Refactored using Factory Method pattern
 ```
 
