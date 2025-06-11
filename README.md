@@ -9,7 +9,7 @@ This repository demonstrates how to apply the **Factory Method** design pattern 
 ```
 factory-method-pattern/
 ├── initialversion/         # Code with switch-case (before refactoring)
-└── refactored-version/      # Refactored using Factory Method pattern
+└── refactoredversion/      # Refactored using Factory Method pattern
 ```
 
 ---
@@ -100,7 +100,7 @@ service.notify("Hello via Email!");
 ## 🛠 Run the Project
 
 ```bash
-cd refactored-version
+cd refactoredversion
 javac *.java
 java Main
 ```

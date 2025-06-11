@@ -1,6 +1,16 @@
 package initialversion;
 
+import refactoredversion.NotificationFactory;
+
 public class NotificationService {
+
+    private final NotificationFactory factory;
+
+    public NotificationService(NotificationFactory factory) {
+        this.factory = factory;
+    }
+
+    /* Initial version
     public void notify(String type, String message) {
         Notification notification;
 
@@ -18,6 +28,12 @@ public class NotificationService {
                 throw new IllegalArgumentException("Unknown notification type: " + type);
         }
 
+        notification.send(message);
+    }
+     */
+
+    public void notify(String message) {
+        Notification notification = factory.createNotification();
         notification.send(message);
     }
 }
